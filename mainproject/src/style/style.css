@@ -1,0 +1,456 @@
+html {
+    font-size: 16px;
+}
+body {
+    background: url("../assets/bg.jpg") top center;
+    line-height: 1.15;
+    min-height: 100vh;
+}
+header {
+    position: relative;
+    height: 6.25rem;
+    background: url("../assets/head_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+header h1 {
+    color: aliceblue;
+    font-size: 2.375rem;
+    line-height: 5rem;
+    text-align: center;
+}
+header .time {
+    position: absolute;
+    right: 1.875rem;
+    line-height: 4.6875rem;
+    color: aliceblue;
+    font-size: 1rem;
+    top: 0;
+}
+.mainbox {
+    display: flex;
+    margin: 0 auto;
+    height: calc(150vh - 6.25rem);
+    padding: 0.625rem;
+}
+
+.mainbox .column1 {
+    width: 40%;
+    height: 1068px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+.mainbox .panel-map {
+    position: relative;
+    height: 650px;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 0 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .panel-graph1 {
+    position: relative;
+    flex: auto;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 0 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .column {
+    width: auto;
+    height: 1068px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+.mainbox .column:nth-child(2) {
+    flex: 5;
+    margin: 0 0.625rem 0.9375rem;
+    position: relative;
+    display: flex;
+}
+.mainbox .panel1 {
+    position: relative;
+    height: auto;
+    flex: auto;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 0 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .panel1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.mainbox .panel1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.mainbox .panel1 .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mainbox .panel1 .panel-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel1 .panel-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel1 h2 {
+    height: 3rem;
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.mainbox .panel1 .chart {
+    height: 15rem;
+}
+.mainbox .panel2 {
+    width: auto;
+    height: 390px;
+    display: flex;
+    flex-direction: row;   
+}
+.mainbox .panel2_1 {
+    position: relative;
+    width: 450px;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 10px 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .panel2_1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.mainbox .panel2_1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.mainbox .panel2_1 .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mainbox .panel2_1 .panel-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel2_1 .panel-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel2_1 h2 {
+    height: 3rem;
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.mainbox .panel2_1 .chart {
+    height: 15rem;
+}
+.mainbox .panel2_2 {
+    position: relative;
+    flex: auto;
+    width: auto;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 10px 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .panel2_2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.mainbox .panel2_2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.mainbox .panel2_2 .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mainbox .panel2_2 .panel-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel2_2 .panel-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel2_2 h2 {
+    height: 3rem;
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.mainbox .panel2_2 .chart {
+    height: 15rem;
+}
+.mainbox .panel3 {
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+}
+.mainbox .panel3_1 {
+    position: relative;
+    flex: auto;
+    width: auto;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("../assets/line.png") rgba(255, 255, 255, 0.04);
+    padding: 0 10px 2.5rem;
+    margin-bottom: 0.625rem;
+}
+.mainbox .panel3_1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.mainbox .panel3_1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.mainbox .panel3_1 .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mainbox .panel3_1 .panel-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel3_1 .panel-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel3_1 h2 {
+    height: 3rem;
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.mainbox .panel3_1 .chart {
+    height: 15rem;
+}
+.mainbox .panel-graph1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.mainbox .panel-graph1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.mainbox .panel-graph1 .panel-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.mainbox .panel-graph1 .panel-footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel-graph1 .panel-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+}
+.mainbox .panel-graph1 h2 {
+    height: 3rem;
+    color: aliceblue;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+.mainbox .panel-graph1 .chart {
+    height: 15rem;
+}
+.mainbox .panel1 {
+    height: auto;
+}
+.mainbox .num-box {
+    flex: 1;
+    position: relative;
+    background-color: rgba(101, 132, 226, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.mainbox .num-box .box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox .num-box div {
+    margin-top: 5px;
+}
+.mainbox .num-box .number {
+    font-size: 2rem;
+}
+.mainbox .num-box .number.conf {
+    color: red;
+}
+.mainbox .num-box .number.hea {
+    color: green;
+}
+.mainbox .num-box .number.de {
+    color: #555657;
+}
+.mainbox .num-box .text {
+    font-size: 1.375rem;
+    color: #7d848a;
+}
+.mainbox .num-box .mini-text {
+    font-size: 0.75rem;
+    color: #a6abaf;
+}
+.mainbox .num-box .mini-text.conf span {
+    color: red;
+}
+.mainbox .num-box .mini-text.hea span {
+    color: green;
+}
+.mainbox .num-box .mini-text.de span {
+    color: #555657;
+}
+.mainbox .map-box {
+    flex: 8;
+    width: 100%;
+    background: url("../assets/map.png") no-repeat center;
+    background-size: 70%;
+}
